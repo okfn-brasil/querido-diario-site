@@ -17,22 +17,40 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;    
 }
 
 .lead {
     font-size: 18px;
     font-weight: 400;
+    color: #fff;
+}
+
+.navbar{
+    background-color: #590a59;
+    height: 70px;
+}
+.navbar-nav{
+    margin-top: 10px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ff256c;
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 100px;
     text-align: center;
-    color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
+    color: #590a59;
+    background:  url(../img/logo-querido-diario.png) no-repeat center center; 
+    background-size: 800px;
+    background-color: #fff;
 }
 
 .intro-message {
@@ -90,7 +108,7 @@ h6 {
 
 .content-section-a {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #590a59;
 }
 
 .content-section-b {
@@ -100,7 +118,11 @@ h6 {
 }
 
 .section-heading {
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
+}
+
+h2.section-heading {
+    color: #fff;
 }
 
 .section-heading-spacer {

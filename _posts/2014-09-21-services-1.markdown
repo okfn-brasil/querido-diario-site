@@ -2,7 +2,12 @@
 layout: default
 img: ipad.png
 category: Services
-title: Death to the Stock Photo:<br>Special Thanks
+title: DADOS MAIS ABERTOS EM UM SÓ LUGAR
 description: |
 ---
-  A special thanks to [Death to the Stock Photo](http://join.deathtothestockphoto.com/) for providing the photographs that you see in this template.  Visit their website to become a member!
+  <p>Fiscalizar as ações dos governos de cada cidade do Brasil pode parecer uma tarefa difícil, mas está longe de ser impossível.</p>
+  <p>O <strong>Querido Diário</strong> é um projeto de código aberto da
+  <strong>Open Knowledge Brasil</strong> que vai usar a tecnologia
+  para libertar e centralizar as informações
+  publicadas nos diários oficiais dos municípios, hoje
+  presas em PDFs obscuros de acesso complicado.</p>
