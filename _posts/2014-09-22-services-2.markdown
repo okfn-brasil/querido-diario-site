@@ -1,10 +1,12 @@
 ---
 layout: default
-img: dog.png
-category: Services
-title: 3D Device Mockups<br>by PSDCovers
+img: bolo.png
+category: 
+title: ACOMPANHE AS DECISÕES DO PODER PÚBLICO E COMBATA A CORRUPÇÃO
 description: |
 ---
-  Turn your 2D designs into high quality, 3D
-  product shots in seconds using free Photoshop actions by [PSDCovers](http://www.psdcovers.com/)! Visit
-  their website to download some of their awesome, free photoshop actions!
+
+Com a Operação Serenata de Amor, já conseguimos mostrar que a inteligência artificial pode ser uma aliada no combate à corrupção ao analisar os gastos da cota parlamentar dos deputados federais. Agora queremos uma fatia maior do bolo.
+
+A tecnologia usada para acessar os dados dos diários fará com que qualquer pessoa possa encontrar informações de seu interesse com facilidade, além de saber em quais outras cidades os dados também aparecem e verificar se alguma empresa citada possui irregularidades.
+
