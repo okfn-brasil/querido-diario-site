@@ -13,6 +13,7 @@ Temos um longo caminho pela frente. Afinal, precisamos libertar informações de
 <p>
 Criamos um formulário para receber contribuições de pessoas interessadas em nos ajudar nesse projeto desafiador. Em dois meses, queremos completar esta etapa e publicar o resultado inédito do censo dos diários. 
 </p>
+
 <p style='text-align:center; padding-top: 10px;'>
 <a href="#" _target="blank" class="myButton">INSCREVA-SE</a>
 </p>
