@@ -1,6 +1,6 @@
 ---
 layout: default
-img: link.png
+img: rede.png
 category: 
 title: PRECISAMOS DA SUA AJUDA PARA COMEÇAR
 description: |
