@@ -21,6 +21,8 @@ h6 {
     font-weight: 500;    
 }
 
+
+
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -48,7 +50,7 @@ h6 {
     padding-bottom: 100px;
     text-align: center;
     color: #590a59;
-    background:  url(../img/logo-querido-diario.png) no-repeat center center; 
+    background:  url(../img/qd-header.gif) no-repeat center center; 
     background-size: 800px;
     background-color: #fff;
 }
@@ -111,15 +113,18 @@ h6 {
     background-color: #590a59;
 }
 
+.content-section-a strong a{
+    color: #fff;
+}
+
 .content-section-b {
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
 }
 
-.content-section-c {
-    padding: 50px 0;
-    background-color: #ff256c;
+.content-section-b a{
+    color: #590a59;
 }
 
 .section-heading {
@@ -185,9 +190,32 @@ h2.section-heading {
 
 footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #ff256c;
 }
 
 p.copyright {
     margin: 15px 0 0;
 }
+
+.myButton {
+	background-color:#ffffff;
+	border-radius:30px;
+	display:inline-block;
+	cursor:pointer;
+	color:#590a59;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:13px 23px;
+	text-decoration:none;
+}
+.myButton:hover {    
+    color:#ff256c;
+    text-decoration: none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* color: #590a59;
