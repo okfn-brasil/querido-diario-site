@@ -2,16 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
+url: 
 title: Querido Diário
-email: your-email@domain.com
-author: Your Name
+email: contato@serenata.ai
+author: Open Knowledge Brasil
 description: > # "Write an awesome description for your new site here. 
-  You can edit this line in _config.yml. It will appear in your document 
-  head meta (for Google search results) and in your feed.xml site 
-  description.
-copyright: 
-credits: 'Todo o conteúdo do Querido Diário está disponível sob a licença Creative Commons Atribuição 4.0 Internacional, o que significa que pode ser compartilhado e reutilizado para trabalhos derivados, desde que citada a fonte. O código-fonte da plataforma também é aberto e está disponível no <a href="https://github.com/okfn-brasil/querido-diario-site">Github</a>. '
+  
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -25,10 +21,10 @@ permalink: pretty
 #   3rd Party Settings    #
 # ----------------------- #
 
-social:
-  - title: twitter
-    url: https://twitter.com/SBootstrap
-  - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
-  - title: linkedin
-    url: 
+# social:
+#   - title: twitter
+#     url: https://twitter.com/SBootstrap
+#   - title: github
+#     url: https://github.com/IronSummitMedia/startbootstrap
+#   - title: linkedin
+#     url: 

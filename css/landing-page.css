@@ -21,8 +21,6 @@ h6 {
     font-weight: 500;    
 }
 
-
-
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -45,6 +43,16 @@ h6 {
     color: #ff256c;
 }
 
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+    background-color: #590a59;
+    color: #fff;
+}
+
+a, a:active, a:focus{
+    outline: none;
+}
 .intro-header {
     padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 100px;
