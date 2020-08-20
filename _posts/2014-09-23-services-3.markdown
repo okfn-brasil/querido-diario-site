@@ -1,8 +1,17 @@
 ---
 layout: default
-img: phones.png
-category: Services
-title: Google Web Fonts and<br>Font Awesome Icons
+img: rede.png
+category: 
+title: PRECISAMOS DA SUA AJUDA PARA COMEÇAR
 description: |
 ---
-This template features the 'Lato' font, part of the [Google Web Font library](http://www.google.com/fonts), as well as [icons from Font Awesome](http://fontawesome.io).
+<div id="colabore">
+Temos um longo caminho pela frente. Afinal, precisamos libertar informações de 5.570 municípios. Para começar, queremos fazer um diagnóstico da situação atual dos diários oficiais, reunindo todos os links e os formatos utilizados pelas prefeituras para publicar as informações. 
+
+Criamos um formulário para receber contribuições de pessoas interessadas em nos ajudar nesse projeto desafiador. Em dois meses, queremos completar esta etapa e publicar o resultado inédito do censo dos diários. 
+
+<p style='text-align:center; padding-top: 10px;'>
+<a href="#" _target="blank" class="myButton">INSCREVA-SE</a>
+</p>
+</div>
+

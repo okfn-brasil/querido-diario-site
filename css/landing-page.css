@@ -17,22 +17,50 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;    
 }
 
 .lead {
     font-size: 18px;
     font-weight: 400;
+    color: #fff;
 }
 
+.navbar{
+    background-color: #590a59;
+    height: 70px;
+}
+.navbar-nav{
+    margin-top: 10px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ff256c;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+    background-color: #590a59;
+    color: #fff;
+}
+
+a, a:active, a:focus{
+    outline: none;
+}
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 100px;
     text-align: center;
-    color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
+    color: #590a59;
+    background:  url(../img/qd-header.gif) no-repeat center center; 
+    background-size: 800px;
+    background-color: #fff;
 }
 
 .intro-message {
@@ -90,7 +118,11 @@ h6 {
 
 .content-section-a {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #590a59;
+}
+
+.content-section-a strong a{
+    color: #fff;
 }
 
 .content-section-b {
@@ -99,8 +131,16 @@ h6 {
     border-bottom: 1px solid #e7e7e7;
 }
 
+.content-section-b a{
+    color: #590a59;
+}
+
 .section-heading {
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
+}
+
+h2.section-heading {
+    color: #fff;
 }
 
 .section-heading-spacer {
@@ -158,9 +198,91 @@ h6 {
 
 footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #ff256c;
 }
+
+.footer-titulo{
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.footer-logos{
+    display: flex;
+    align-items: center;
+    width: 80%;    
+}
+
+.footer-logos img{
+    padding-right: 15px;
+}
+
+.footer-logos-apoio{
+    display: flex;
+    align-items: left;
+}
+
+.license {
+    color: #fff;
+    font-size: 10pt;
+}
+
+.license a{    
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .container{
+        text-align: center;
+    }
+    .footer-logos-responsivo {
+        display: inline-block;  
+        width: 60%;          
+    }
+
+    .footer-logos-responsivo div {
+        padding: 0;
+    }
+
+    .footer-logos-responsivo img {
+        padding: 10px 0;
+    }
+
+    .footer-titulo {
+        font-size: 20pt;        
+    }
+    .license{
+        padding-top: 15px;
+    }
+}
+
+
 
 p.copyright {
     margin: 15px 0 0;
 }
+
+.myButton {
+	background-color:#ffffff;
+	border-radius:30px;
+	display:inline-block;
+	cursor:pointer;
+	color:#590a59;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:13px 23px;
+	text-decoration:none;
+}
+.myButton:hover {    
+    color:#ff256c;
+    text-decoration: none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* color: #590a59;
