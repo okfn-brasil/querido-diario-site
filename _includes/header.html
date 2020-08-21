@@ -1,53 +1,37 @@
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+<!-- Header Start -->
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- header Nav Start -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#home">
-                <!-- {{ site.title }} -->
-                <img src="../img/logo-querido-diario-branco.png" alt="" style="width: 60px; height: 40px;">
+            <a class="navbar-brand" href="index.html">
+              <img src="{{ site.baseurl }}/img/logo.png" alt="Logo">
             </a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">  
-            	<li>
-                    <a class="page-scroll" href="#projeto">O PROJETO</a>
-                </li>            
-                <li>
-                    <a class="page-scroll" href="#colabore">COLABORE</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+          </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#intro">O PROJETO</a></li>
+                <li><a href="#colabore">COLABORE</a></li>
+                <!-- <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/work">Work</a></li>
+                <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                <li><a href="{{ site.baseurl }}/contact">Contact</a></li> -->
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
     </div>
-    <!-- /.container -->
-</nav>
-
-<section id="home">
-<!-- Header -->
-	<div class="intro-header">
-
-		<div class="container">
-
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="intro-message">
-						<h1>{{ page.title }}</h1>
-                        <h3>{{ page.subTitle }}</h3>
-                </div>
-				</div>
-			</div>
-
-		</div>
-		<!-- /.container -->
-
-	</div>
-	<!-- /.intro-header -->
-</section>
+  </div>
+</header><!-- header close -->
