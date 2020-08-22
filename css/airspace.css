@@ -41,8 +41,8 @@ ul {
 }
 a,
 a:active,
-a:focus,
-a:active {
+a:focus, 
+a:visited {
   text-decoration: none !important;
   outline: none;
 }
@@ -195,9 +195,9 @@ header .navbar-default .navbar-nav li a:hover {
   font-weight: 500;
 }
 #intro .block img {
-  padding-left: 40px;
-  width: 100%;
+  padding-left: 40px;  
 }
+
 #intro .section-title {
   margin-bottom: 0px;
 }
@@ -239,6 +239,23 @@ header .navbar-default .navbar-nav li a:hover {
   color: #590a59;
 }
 
+.intro-a img{
+  width: 90%;
+}
+
+.intro-b img {
+  width: 85%;
+}
+
+.intro-b img {
+  width: 80%;
+}
+
+.intro-c a:visited{
+  text-decoration-color: none;
+}
+
+
 
 /*--
 	Subscription Button
@@ -257,7 +274,8 @@ header .navbar-default .navbar-nav li a:hover {
 	text-decoration:none;
 }
 .myButton:hover {    
-    color:#ff256c;
+    background-color:#ff256c;
+    color: #fff;
     text-decoration: none;
 }
 .myButton:active {
