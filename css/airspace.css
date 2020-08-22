@@ -1,0 +1,358 @@
+/*
+ * This is the main css file that ships with the airspace theme.
+ * In airspace, it is called style.css
+ * However, style.css now holds additional styles for this jekyll port. (Not written by ThemeFisher)
+ * The original style.css is now called airspace.css
+ * 
+ */
+@import url(//fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap);
+/* var text-decoration */
+/*--
+	Common Css
+--*/
+body {
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 28px;
+  font-weight: 300;
+}
+p {
+  font-size: 15px;
+  line-height: 28px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a,
+a:active,
+a:focus, 
+a:visited {
+  text-decoration: none !important;
+  outline: none;
+}
+.section-title {
+  margin-bottom: 70px;
+}
+.section-title h2 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+}
+.section-title p {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  color: #666;
+}
+/*--
+	Header Start
+--*/
+header {
+  background: #590a59;
+  padding: 20px 0;
+}
+header .navbar {
+  margin-bottom: 0px;
+  border: 0px;
+}
+header .navbar-brand {
+  padding-top: 5px;
+}
+header .navbar-default {
+  background: none;
+  border: 0px;
+}
+header .navbar-default .navbar-nav {
+  padding-top: 10px;
+}
+header .navbar-default .navbar-nav li a {
+  color: #fff;
+  padding: 10px 26px;
+  font-size: 15px;
+  font-weight: 500;
+}
+header .navbar-default .navbar-nav li a:hover {
+  color: #ff256c;
+}
+/*---------------------------------------------
+					Index Start
+-----------------------------------------------*/
+/*--
+	Slider Start
+--*/
+/* #slider {
+  background: url("../img/qd-header.gif") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 10% 0%;
+  padding: 200px 0 280px 0;
+  position: relative;
+} */
+
+
+
+.intro-header {
+  padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 100px;
+  text-align: center;
+  color: #590a59;
+  background:  url(../img/qd-header.gif) no-repeat center center; 
+  background-size: 800px;
+  background-color: #fff;
+}
+
+.intro-message {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+  font-size: 5em;
+}
+
+.intro-divider {
+  width: 400px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+  .intro-message {
+      padding-bottom: 15%;
+  }
+
+  .intro-message > h1 {
+      font-size: 3em;
+  }
+
+  ul.intro-social-buttons > li {
+      display: block;
+      margin-bottom: 20px;
+      padding: 0;
+  }
+
+  ul.intro-social-buttons > li:last-child {
+      margin-bottom: 0;
+  }
+
+  .intro-divider {
+      width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--
+	wrapper Start
+--*/
+#intro {
+  padding: 50px 0;
+}
+#intro .block h2 {
+  padding-top: 35px;
+  line-height: 27px;
+  margin: 0;
+}
+#intro .block p {  
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+#intro .block img {
+  padding-left: 40px;  
+}
+
+#intro .section-title {
+  margin-bottom: 0px;
+}
+
+.intro-a a {
+  color: #fff;
+}
+
+.intro-b a {
+  color: #590a59;
+}
+
+
+.intro-a, .intro-c{
+  background-color: #590a59;
+}
+
+.intro-a .section-title {
+  color: #fff;
+}
+
+.intro-c .section-title {
+  color: #fff;
+}
+
+.intro-a .block p {
+  color: #fff;
+}
+
+.intro-c .block p {
+  color: #fff;
+}
+
+.intro-b .block p {
+  color: #590a59;
+}
+
+.intro-b .block h2 {
+  color: #590a59;
+}
+
+.intro-a img{
+  width: 90%;
+}
+
+.intro-b img {
+  width: 85%;
+}
+
+.intro-b img {
+  width: 80%;
+}
+
+.intro-c a:visited{
+  text-decoration-color: none;
+}
+
+
+
+/*--
+	Subscription Button
+--*/
+.myButton {
+	background-color:#ffffff;
+	border-radius:30px;
+	display:inline-block;
+	cursor:pointer;
+	color:#590a59;
+	font-family:Arial;
+	font-size:16px;
+  font-weight:bold;
+  margin-top: 20px;
+	padding:13px 23px;
+	text-decoration:none;
+}
+.myButton:hover {    
+    background-color:#ff256c;
+    color: #fff;
+    text-decoration: none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+
+
+
+
+
+/*--
+	footer Start
+--*/
+footer {
+  padding: 50px 0;
+  background-color: #ff256c;
+}
+
+.footer-titulo{
+  color: #fff;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.footer-logos{
+  display: flex;
+  align-items: center;
+  width: 80%;    
+}
+
+.footer-logos img{
+  padding-right: 15px;
+}
+
+.footer-logos-apoio{
+  display: flex;
+  align-items: left;
+}
+
+.license {
+  color: #fff;
+  font-size: 10pt;
+}
+
+.license a{    
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container{
+      text-align: center;
+  }
+  .footer-logos-responsivo {
+      display: inline-block;  
+      width: 60%;          
+  }
+
+  .footer-logos-responsivo div {
+      padding: 0;
+  }
+
+  .footer-logos-responsivo img {
+      padding: 10px 0;
+  }
+
+  .footer-titulo {
+      font-size: 20pt;        
+  }
+  .license{
+      padding-top: 15px;
+  }
+}
