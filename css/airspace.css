@@ -89,25 +89,9 @@ header .navbar-default .navbar-nav li a {
 header .navbar-default .navbar-nav li a:hover {
   color: #ff256c;
 }
-/*---------------------------------------------
-					Index Start
------------------------------------------------*/
-/*--
-	Slider Start
---*/
-/* #slider {
-  background: url("../img/qd-header.gif") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 10% 0%;
-  padding: 200px 0 280px 0;
-  position: relative;
-} */
-
-
 
 .intro-header {
-  padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   padding-bottom: 100px;
   text-align: center;
   color: #590a59;
@@ -118,24 +102,8 @@ header .navbar-default .navbar-nav li a:hover {
 
 .intro-message {
   position: relative;
-  padding-top: 20%;
+  padding-top: 15%;
   padding-bottom: 20%;
-}
-
-.intro-message > h1 {
-  margin: 0;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-  font-size: 5em;
-}
-
-.intro-divider {
-  width: 400px;
-  border-top: 1px solid #f8f8f8;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-.intro-message > h3 {
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 @media(max-width:767px) {
@@ -143,40 +111,7 @@ header .navbar-default .navbar-nav li a:hover {
       padding-bottom: 15%;
   }
 
-  .intro-message > h1 {
-      font-size: 3em;
-  }
-
-  ul.intro-social-buttons > li {
-      display: block;
-      margin-bottom: 20px;
-      padding: 0;
-  }
-
-  ul.intro-social-buttons > li:last-child {
-      margin-bottom: 0;
-  }
-
-  .intro-divider {
-      width: 100%;
-  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*--
 	wrapper Start
@@ -260,18 +195,20 @@ header .navbar-default .navbar-nav li a:hover {
 /*--
 	Subscription Button
 --*/
-.myButton {
-	background-color:#ffffff;
+.myButton, .myButton-header {  
 	border-radius:30px;
 	display:inline-block;
-	cursor:pointer;
-	color:#590a59;
-	font-family:Arial;
+	cursor:pointer;		
 	font-size:16px;
   font-weight:bold;
   margin-top: 20px;
 	padding:13px 23px;
 	text-decoration:none;
+}
+
+.myButton {
+	background-color:#ffffff;
+	color:#590a59;
 }
 .myButton:hover {    
     background-color:#ff256c;
@@ -283,6 +220,20 @@ header .navbar-default .navbar-nav li a:hover {
 	top:1px;
 }
 
+.myButton-header {
+	background-color:#ff256c;
+	color:#fff;
+}
+
+.myButton-header:hover {    
+    background-color:#590a59;
+    color: #fff;
+    text-decoration: none;
+}
+.myButton-hader:active {
+	position:relative;
+	top:1px;
+}
 
 
 
