@@ -96,7 +96,7 @@ header .navbar-default .navbar-nav li a:hover {
 
 .intro-header {
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   text-align: center;
   color: #590a59;
   background:  url(../img/qd-header.gif) no-repeat center center; 
@@ -178,11 +178,11 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 .intro-a img{
-  width: 90%;
+  width: 80%;
 }
 
 .intro-b img {
-  width: 85%;
+  width: 70%;
 }
 
 .intro-c img {
@@ -193,7 +193,15 @@ header .navbar-default .navbar-nav li a:hover {
   text-decoration-color: none;
 }
 
+.intro-center {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
+.intro-text {
+  text-align: left;
+}
 
 /*--
 	Subscription Button
@@ -288,12 +296,32 @@ footer {
   .container {
     width: 90%;    
   }
+  .intro-header {
+    background-size: 610px;
+  }
+
   #intro .block p {
-    font-size: 16px;
+    font-size: 14px;  
+    padding-top: 5px;
+    line-height: 20px;
+  }
+  #intro .block h2 {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 0;
+  }
+  .myButton, .myButton-header {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+  .license p {
+    font-size: 12px;
+    line-height: 20px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container{
       text-align: center;         
   }
