@@ -110,12 +110,7 @@ header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 20%;
 }
 
-@media(max-width:767px) {
-  .intro-message {
-      padding-bottom: 15%;
-  }
 
-}
 
 /*--
 	wrapper Start
@@ -125,7 +120,7 @@ header .navbar-default .navbar-nav li a:hover {
 }
 #intro .block h2 {
   padding-top: 35px;
-  line-height: 27px;
+  line-height: 30px;
   margin: 0;
 }
 #intro .block p {  
@@ -153,27 +148,15 @@ header .navbar-default .navbar-nav li a:hover {
   background-color: #590a59;
 }
 
-.intro-a .section-title {
+.intro-a .section-title, .intro-c .section-title {
   color: #fff;
 }
 
-.intro-c .section-title {
+.intro-a .block p, .intro-c .block p {
   color: #fff;
 }
 
-.intro-a .block p {
-  color: #fff;
-}
-
-.intro-c .block p {
-  color: #fff;
-}
-
-.intro-b .block p {
-  color: #590a59;
-}
-
-.intro-b .block h2 {
+.intro-b .block p, .intro-b .block h2 {
   color: #590a59;
 }
 
@@ -203,9 +186,14 @@ header .navbar-default .navbar-nav li a:hover {
   text-align: left;
 }
 
+.intro-c .intro-text{
+  width: 80%;
+}
+
 /*--
 	Subscription Button
 --*/
+
 .myButton, .myButton-header {  
 	border-radius:30px;
 	display:inline-block;
@@ -246,14 +234,6 @@ header .navbar-default .navbar-nav li a:hover {
 	top:1px;
 }
 
-
-
-
-
-
-
-
-
 /*--
 	footer Start
 --*/
@@ -284,6 +264,7 @@ footer {
   font-size: 10pt;
   padding-top: 30px;
   padding-left: 0;
+  display: flex;
 }
 
 .license a{    
@@ -292,7 +273,10 @@ footer {
   color: #fff;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+/*--
+	---------- RESPONSIVE -----------
+--*/
+@media (min-width: 577px) and (max-width: 991px) {
   .container {
     width: 90%;    
   }
@@ -305,16 +289,23 @@ footer {
     padding-top: 5px;
     line-height: 20px;
   }
+
   #intro .block h2 {
     font-size: 20px;
     line-height: 25px;
     padding: 10px 0;
   }
+
+  .intro-c .intro-text {
+    width: 60%;
+  }
+
   .myButton, .myButton-header {
     font-size: 14px;
     margin-top: 10px;
     padding: 10px 20px;
   }
+
   .license p {
     font-size: 12px;
     line-height: 20px;
@@ -322,27 +313,109 @@ footer {
 }
 
 @media (max-width: 767px) {
+  .intro-c .intro-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
   .container{
       text-align: center;         
   }
+
+  header {
+    padding: 0;
+  }
+  .navbar-brand {
+    margin-top: 12px;
+  }
+
+  .intro-header {
+    padding: 25px 0;
+    background-size: 380px;
+  }
+
+  .myButton, .myButton-header {
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 4px 10px;
+  }
+
+  .intro-message {
+    margin-bottom: 10rem;
+  }
+
+  .intro-message p {
+    margin-bottom: 0;
+  }
+
+  #intro {
+    padding: 10px 0;
+  }  
+  
+  .intro-center {
+    display: inline;
+  }
+
+  #intro .block p {
+    font-size: 14px;  
+    padding-top: 5px;
+    line-height: 20px;
+  }
+  #intro .block h2 {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 0;
+  }
+
+  #intro .block img {
+    padding-left: 0;
+  }
+
+  .intro-a img, .intro-c img {
+    width: 60%;
+    padding-top: 15px;
+  }
+
+  .intro-b img {
+    width: 60%;
+    padding-top: 10px;
+  }
+
+  footer {
+    padding: 15px 0;  
+  }
+
   .footer-logos-responsivo {
       display: inline-block;  
-      width: 60%;          
+      width: 40%;          
   }
 
   .footer-logos-responsivo div {
-      padding: 0;
+      padding: 10px;
   }
 
   .footer-logos-responsivo img {
-      padding: 10px 0;
+      padding: 15px 0;
   }
 
   .footer-titulo {
-      font-size: 20pt;        
+      font-size: 12pt;  
+      padding-bottom: 0;      
   }
+
+  .footer-apoio {
+    padding-top: 20px;
+  }
+
   .license{
-      padding-top: 15px;
+      padding-top: 25px;
+      margin: 0 16px;
+  }
+
+  .license p {
+    font-size: 12px;
+    line-height: 20px;
   }
 }
 
