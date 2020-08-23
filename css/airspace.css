@@ -10,6 +10,10 @@
 /*--
 	Common Css
 --*/
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -145,7 +149,6 @@ header .navbar-default .navbar-nav li a:hover {
   color: #590a59;
 }
 
-
 .intro-a, .intro-c{
   background-color: #590a59;
 }
@@ -182,8 +185,8 @@ header .navbar-default .navbar-nav li a:hover {
   width: 85%;
 }
 
-.intro-b img {
-  width: 80%;
+.intro-c img {
+  width: 100%;
 }
 
 .intro-c a:visited{
@@ -281,9 +284,18 @@ footer {
   color: #fff;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 90%;    
+  }
+  #intro .block p {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 768px) {
   .container{
-      text-align: center;
+      text-align: center;         
   }
   .footer-logos-responsivo {
       display: inline-block;  
