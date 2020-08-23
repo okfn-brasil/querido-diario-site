@@ -296,7 +296,7 @@ header .navbar-default .navbar-nav li a:hover {
 	footer Start
 --*/
 footer {
-  padding: 50px 0;
+  padding: 40px 0;
   background-color: #ff256c;
 }
 
@@ -308,12 +308,8 @@ footer {
 
 .footer-logos{
   display: flex;
-  align-items: center;
-  width: 80%;    
-}
-
-.footer-logos img{
-  padding-right: 15px;
+  align-items: center;    
+  text-align: center;
 }
 
 .footer-logos-apoio{
@@ -324,6 +320,8 @@ footer {
 .license {
   color: #fff;
   font-size: 10pt;
+  padding-top: 30px;
+  padding-left: 0;
 }
 
 .license a{    
@@ -356,3 +354,4 @@ footer {
       padding-top: 15px;
   }
 }
+
