@@ -10,6 +10,10 @@
 /*--
 	Common Css
 --*/
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -89,26 +93,10 @@ header .navbar-default .navbar-nav li a {
 header .navbar-default .navbar-nav li a:hover {
   color: #ff256c;
 }
-/*---------------------------------------------
-					Index Start
------------------------------------------------*/
-/*--
-	Slider Start
---*/
-/* #slider {
-  background: url("../img/qd-header.gif") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 10% 0%;
-  padding: 200px 0 280px 0;
-  position: relative;
-} */
-
-
 
 .intro-header {
-  padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  padding-bottom: 100px;
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
   text-align: center;
   color: #590a59;
   background:  url(../img/qd-header.gif) no-repeat center center; 
@@ -118,63 +106,9 @@ header .navbar-default .navbar-nav li a:hover {
 
 .intro-message {
   position: relative;
-  padding-top: 20%;
+  padding-top: 15%;
   padding-bottom: 20%;
 }
-
-.intro-message > h1 {
-  margin: 0;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-  font-size: 5em;
-}
-
-.intro-divider {
-  width: 400px;
-  border-top: 1px solid #f8f8f8;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-.intro-message > h3 {
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
-@media(max-width:767px) {
-  .intro-message {
-      padding-bottom: 15%;
-  }
-
-  .intro-message > h1 {
-      font-size: 3em;
-  }
-
-  ul.intro-social-buttons > li {
-      display: block;
-      margin-bottom: 20px;
-      padding: 0;
-  }
-
-  ul.intro-social-buttons > li:last-child {
-      margin-bottom: 0;
-  }
-
-  .intro-divider {
-      width: 100%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -186,7 +120,7 @@ header .navbar-default .navbar-nav li a:hover {
 }
 #intro .block h2 {
   padding-top: 35px;
-  line-height: 27px;
+  line-height: 30px;
   margin: 0;
 }
 #intro .block p {  
@@ -210,68 +144,70 @@ header .navbar-default .navbar-nav li a:hover {
   color: #590a59;
 }
 
-
 .intro-a, .intro-c{
   background-color: #590a59;
 }
 
-.intro-a .section-title {
+.intro-a .section-title, .intro-c .section-title {
   color: #fff;
 }
 
-.intro-c .section-title {
+.intro-a .block p, .intro-c .block p {
   color: #fff;
 }
 
-.intro-a .block p {
-  color: #fff;
-}
-
-.intro-c .block p {
-  color: #fff;
-}
-
-.intro-b .block p {
-  color: #590a59;
-}
-
-.intro-b .block h2 {
+.intro-b .block p, .intro-b .block h2 {
   color: #590a59;
 }
 
 .intro-a img{
-  width: 90%;
-}
-
-.intro-b img {
-  width: 85%;
-}
-
-.intro-b img {
   width: 80%;
+}
+
+.intro-b img {
+  width: 70%;
+}
+
+.intro-c img {
+  width: 100%;
 }
 
 .intro-c a:visited{
   text-decoration-color: none;
 }
 
+.intro-center {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
+.intro-text {
+  text-align: left;
+}
+
+.intro-c .intro-text{
+  width: 80%;
+}
 
 /*--
 	Subscription Button
 --*/
-.myButton {
-	background-color:#ffffff;
+
+.myButton, .myButton-header {  
 	border-radius:30px;
 	display:inline-block;
-	cursor:pointer;
-	color:#590a59;
-	font-family:Arial;
+	cursor:pointer;		
 	font-size:16px;
   font-weight:bold;
   margin-top: 20px;
 	padding:13px 23px;
 	text-decoration:none;
+}
+
+.myButton {
+	background-color:#ffffff;
+	color:#590a59;
 }
 .myButton:hover {    
     background-color:#ff256c;
@@ -283,20 +219,26 @@ header .navbar-default .navbar-nav li a:hover {
 	top:1px;
 }
 
+.myButton-header {
+	background-color:#ff256c;
+	color:#fff;
+}
 
-
-
-
-
-
-
-
+.myButton-header:hover {    
+    background-color:#590a59;
+    color: #fff;
+    text-decoration: none;
+}
+.myButton-hader:active {
+	position:relative;
+	top:1px;
+}
 
 /*--
 	footer Start
 --*/
 footer {
-  padding: 50px 0;
+  padding: 40px 0;
   background-color: #ff256c;
 }
 
@@ -308,12 +250,8 @@ footer {
 
 .footer-logos{
   display: flex;
-  align-items: center;
-  width: 80%;    
-}
-
-.footer-logos img{
-  padding-right: 15px;
+  align-items: center;    
+  text-align: center;
 }
 
 .footer-logos-apoio{
@@ -324,6 +262,9 @@ footer {
 .license {
   color: #fff;
   font-size: 10pt;
+  padding-top: 30px;
+  padding-left: 0;
+  display: flex;
 }
 
 .license a{    
@@ -332,27 +273,149 @@ footer {
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .container{
-      text-align: center;
+/*--
+	---------- RESPONSIVE -----------
+--*/
+@media (min-width: 577px) and (max-width: 991px) {
+  .container {
+    width: 90%;    
   }
+  .intro-header {
+    background-size: 610px;
+  }
+
+  #intro .block p {
+    font-size: 14px;  
+    padding-top: 5px;
+    line-height: 20px;
+  }
+
+  #intro .block h2 {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 0;
+  }
+
+  .intro-c .intro-text {
+    width: 60%;
+  }
+
+  .myButton, .myButton-header {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+
+  .license p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-c .intro-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container{
+      text-align: center;         
+  }
+
+  header {
+    padding: 0;
+  }
+  .navbar-brand {
+    margin-top: 12px;
+  }
+
+  .intro-header {
+    padding: 25px 0;
+    background-size: 380px;
+  }
+
+  .myButton, .myButton-header {
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 4px 10px;
+  }
+
+  .intro-message {
+    margin-bottom: 10rem;
+  }
+
+  .intro-message p {
+    margin-bottom: 0;
+  }
+
+  #intro {
+    padding: 10px 0;
+  }  
+  
+  .intro-center {
+    display: inline;
+  }
+
+  #intro .block p {
+    font-size: 14px;  
+    padding-top: 5px;
+    line-height: 20px;
+  }
+  #intro .block h2 {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 0;
+  }
+
+  #intro .block img {
+    padding-left: 0;
+  }
+
+  .intro-a img, .intro-c img {
+    width: 60%;
+    padding-top: 15px;
+  }
+
+  .intro-b img {
+    width: 60%;
+    padding-top: 10px;
+  }
+
+  footer {
+    padding: 15px 0;  
+  }
+
   .footer-logos-responsivo {
       display: inline-block;  
-      width: 60%;          
+      width: 40%;          
   }
 
   .footer-logos-responsivo div {
-      padding: 0;
+      padding: 10px;
   }
 
   .footer-logos-responsivo img {
-      padding: 10px 0;
+      padding: 15px 0;
   }
 
   .footer-titulo {
-      font-size: 20pt;        
+      font-size: 12pt;  
+      padding-bottom: 0;      
   }
+
+  .footer-apoio {
+    padding-top: 20px;
+  }
+
   .license{
-      padding-top: 15px;
+      padding-top: 25px;
+      margin: 0 16px;
+  }
+
+  .license p {
+    font-size: 12px;
+    line-height: 20px;
   }
 }
+
