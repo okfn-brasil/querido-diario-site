@@ -1,0 +1,458 @@
+/*
+ * This is the main css file that ships with the airspace theme.
+ * In airspace, it is called style.css
+ * However, style.css now holds additional styles for this jekyll port. (Not written by ThemeFisher)
+ * The original style.css is now called airspace.css
+ * 
+ */
+@import url(//fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap);
+/* var text-decoration */
+/*--
+	Common Css
+--*/
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 28px;
+  font-weight: 300;
+}
+p {
+  font-size: 15px;
+  line-height: 28px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a,
+a:active,
+a:focus, 
+a:visited {
+  text-decoration: none !important;
+  outline: none;
+}
+.section-title {
+  margin-bottom: 70px;
+}
+.section-title h2 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+}
+.section-title p {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  color: #666;
+}
+/*--
+	Header Start
+--*/
+header {
+  background: #590a59;
+  padding: 20px 0;
+}
+header .navbar {
+  margin-bottom: 0px;
+  border: 0px;
+}
+header .navbar-brand {
+  padding-top: 5px;
+}
+header .navbar-default {
+  background: none;
+  border: 0px;
+}
+header .navbar-default .navbar-nav {
+  padding-top: 10px;
+}
+header .navbar-default .navbar-nav li a {
+  color: #fff;
+  padding: 10px 26px;
+  font-size: 15px;
+  font-weight: 500;
+}
+header .navbar-default .navbar-nav li a:hover {
+  color: #ff256c;
+}
+
+.intro-header {
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  text-align: center;
+  color: #590a59;
+  background:  url(../img/qd-header.gif) no-repeat center center; 
+  background-size: 800px;
+  background-color: #fff;
+}
+
+.intro-message {
+  position: relative;
+  padding-top: 15%;
+  padding-bottom: 20%;
+}
+
+
+
+/*--
+	wrapper Start
+--*/
+#intro {
+  padding: 50px 0;
+}
+#intro .block h2 {
+  padding-top: 35px;
+  line-height: 30px;
+  margin: 0;
+}
+#intro .block p {  
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+#intro .block img {
+  padding-left: 40px;  
+}
+
+#intro .section-title {
+  margin-bottom: 0px;
+}
+
+.intro-a a {
+  color: #fff;
+}
+
+.intro-b a {
+  color: #590a59;
+}
+
+.intro-a, .intro-c{
+  background-color: #590a59;
+}
+
+.intro-a .section-title, .intro-c .section-title {
+  color: #fff;
+}
+
+.intro-a .block p, .intro-c .block p {
+  color: #fff;
+}
+
+.intro-b .block p, .intro-b .block h2 {
+  color: #590a59;
+}
+
+.intro-a img{
+  width: 80%;
+}
+
+.intro-b img {
+  width: 70%;
+}
+
+.intro-c img {
+  width: 100%;
+}
+
+.intro-c a:visited{
+  text-decoration-color: none;
+}
+
+.intro-center {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-text {
+  text-align: left;
+}
+
+.intro-c .intro-text{
+  width: 80%;
+}
+
+/*--
+	Subscription Button
+--*/
+
+.myButton, .myButton-header {  
+	border-radius:30px;
+	display:inline-block;
+	cursor:pointer;		
+	font-size:16px;
+  font-weight:bold;
+  margin-top: 20px;
+	padding:13px 23px;
+	text-decoration:none;
+}
+
+.myButton {
+	background-color:#ffffff;
+	color:#590a59;
+}
+.myButton:hover {    
+    background-color:#ff256c;
+    color: #fff;
+    text-decoration: none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton-header {
+	background-color:#ff256c;
+	color:#fff;
+}
+
+.myButton-header:hover {    
+    background-color:#590a59;
+    color: #fff;
+    text-decoration: none;
+}
+.myButton-hader:active {
+	position:relative;
+	top:1px;
+}
+
+/*--
+	footer Start
+--*/
+footer {
+  padding: 40px 0;
+  background-color: #ff256c;
+}
+
+.footer-titulo{
+  color: #fff;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.footer-logos{
+  display: flex;
+  align-items: center;    
+  text-align: center;
+}
+
+.footer-logos-apoio{
+  display: flex;
+  align-items: left;
+}
+
+.img-apoio {
+  width: 20%;
+  padding-top: 5px;
+}
+
+.license {
+  color: #fff;
+  padding-top: 30px;
+  padding-left: 20px;
+  display: flex;
+}
+
+.license p {
+  font-size: 10pt;
+  line-height: 17px;
+  padding-left: 5px;
+}
+
+.license a{    
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+.ccby {
+  width: 30px;
+  height: 30px;  
+}
+
+/*--
+	---------- RESPONSIVE -----------
+--*/
+@media (min-width: 577px) and (max-width: 991px) {
+  .container {
+    width: 90%;    
+  }
+  .intro-header {
+    background-size: 610px;
+  }
+
+  #intro .block p {
+    font-size: 14px;  
+    padding-top: 5px;
+    line-height: 20px;
+  }
+
+  #intro .block h2 {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 0;
+  }
+
+  .intro-c .intro-text {
+    width: 60%;
+  }
+
+  .myButton, .myButton-header {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+
+  .footer-titulo {
+    padding: 10px 0 0 0;
+  }
+
+  .license p {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .ccby {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-c .intro-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container{
+    text-align: center;         
+  }
+
+  header {
+    padding: 0;
+  }
+  .navbar-brand {
+    margin-top: 12px;
+  }
+
+  .intro-header {
+    padding: 25px 0;
+    background-size: 380px;
+  }
+
+  .myButton, .myButton-header {
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 4px 10px;
+  }
+
+  .intro-message {
+    margin-bottom: 10rem;
+  }
+
+  .intro-message p {
+    margin-bottom: 0;
+  }
+
+  #intro {
+    padding: 10px 0;
+  }  
+  
+  .intro-center {
+    display: inline;
+  }
+
+  #intro .block p {
+    font-size: 14px;  
+    padding-top: 5px;
+    line-height: 20px;
+  }
+  #intro .block h2 {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 0;
+  }
+
+  #intro .block img {
+    padding-left: 0;
+  }
+
+  .intro-a img, .intro-c img {
+    width: 60%;
+    padding-top: 15px;
+  }
+
+  .intro-b img {
+    width: 60%;
+    padding-top: 10px;
+  }
+
+  footer {
+    padding: 15px 0;     
+  }
+
+  footer .container {
+    text-align: left;
+  }
+
+  footer .container .col-sm-6 {    
+    padding-left: 30px;
+  }
+
+  .footer-logos-responsivo {       
+      width: 95%;          
+  }
+
+  .footer-logos-responsivo div {
+      padding: 10px;
+  }
+
+  .footer-logos-responsivo img {
+      padding: 15px 0;
+  }
+
+  .footer-titulo {
+      font-size: 10pt;  
+      padding-bottom: 0;      
+  }
+
+  .license{
+      padding-top: 25px;
+      padding-left: 15px;
+      margin: 0 16px;
+  }
+
+  .license p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .ccby {
+    width: 17px;
+    height: 17px;
+  }
+
+}
+
