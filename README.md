@@ -6,15 +6,6 @@ This Jekyll theme is a port of [ThemeFisher's](https://themefisher.com) [Airspac
 ## Usage
 To start your project, [fork this respository](https://github.com/ndrewtl/airspace-jekyll/fork), put in your content, and go!
 
-## Examples
-Here are some projects that have used this Jekyll Theme:
-* [BOYUAN Open Source 博辕开源](https://boyuanitsm.github.io)
-* [Campus VC](https://mrchildneo.github.io/mrchildneo/)
-* [Mãos de amar](https://www.maosdeamar.com.br/)
-* [ATK Team](http://www.atksec.com/)
-* [Coding Club](https://ourcodingclub.github.io/)
-* [Dev Empathy Book Club](http://www.devempathybook.club/)
-* [DKAN Open Data Catalog](http://getdkan.com) (modified version of this theme)
 
 ## Steps for Setup:
 
@@ -48,8 +39,8 @@ using RubyGems.
 
 Clone the repository, and `cd` into it:
 ```sh
-$ git clone https://github.com/ndrewtl/airspace-jekyll.git
-$ cd airspace-jekyll
+$ git clone https://github.com/okfn-brasil/querido-diario-site.git
+$ cd querido-diario-site
 ```
 
 Install dependencies locally:
@@ -61,5 +52,5 @@ This should install a local copy of jekyll.
 
 Now run the server:
 ```sh
-$ ./vendor/bundle/ruby/#{YOUR_RUBY_VERSION}/bin/jekyll server
+$ bundle exec jekyll serve
 ```
