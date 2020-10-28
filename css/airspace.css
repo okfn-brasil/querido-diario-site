@@ -99,14 +99,14 @@ header .navbar-default .navbar-nav li a:hover {
   text-align: center;
   color:#5e408f;
   background:  url(../img/logo_principal.png) no-repeat center center; 
-  background-size: 800px;
+  background-size: 600px;
   background-color: #fff;
 }
 
 .intro-message {
   position: relative;
-  padding-top: 15%;
-  padding-bottom: 20%;
+  /* padding-top: 15%;
+  padding-bottom: 20%; */
 }
 
 .slogan{
@@ -114,6 +114,7 @@ header .navbar-default .navbar-nav li a:hover {
   font-size: 50px;
   font-weight: 500;
   line-height: 60px;  
+  margin-top: 40%;
 }
 
 /*--
@@ -148,9 +149,14 @@ header .navbar-default .navbar-nav li a:hover {
   background-color: #5e408f;
 }
 
-.intro-b mark, .intro-c mark {
+.intro-b mark, .intro-d mark  {
   color: #fff;
   background-color: #ff8500;
+}
+
+.intro-c mark {
+  color: #fff;
+  background-color: #5e408f;
 }
 
 .intro-b {
@@ -158,6 +164,10 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 .intro-c{
+  background-color: #fffcbd;
+}
+
+.intro-d{
   background-color: #966be8;
 }
 
@@ -169,8 +179,12 @@ header .navbar-default .navbar-nav li a:hover {
   color: #fff;
 }
 
-.intro-a .block p, .intro-c .block p {
+.intro-a .block p, .intro-d .block p {
   color: #fff;
+}
+
+.intro-c .block p {
+  color: #5e408f;
 }
 
 .intro-b .block p, .intro-b .block h2 {
