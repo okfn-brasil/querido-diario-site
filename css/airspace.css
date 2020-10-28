@@ -5,8 +5,7 @@
  * The original style.css is now called airspace.css
  * 
  */
-@import url(//fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap);
-/* var text-decoration */
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Montserrat+Alternates:wght@400;600;700&display=swap');
 /*--
 	Common Css
 --*/
@@ -15,29 +14,28 @@ html{
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Raleway', sans-serif;
+h1 {
+  
 }
 h2 {
-  font-size: 30px;
-  font-weight: 400;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 35px;
+  line-height: 30px;
+  margin: 0;
 }
 h3 {
   font-size: 28px;
   font-weight: 300;
 }
-p {
+/* p {
   font-size: 15px;
-  line-height: 28px;
-}
+} */
 ul {
   padding: 0;
   margin: 0;
@@ -53,11 +51,7 @@ a:visited {
 .section-title {
   margin-bottom: 70px;
 }
-.section-title h2 {
-  text-transform: uppercase;
-  font-size: 28px;
-  font-weight: 600;
-}
+
 .section-title p {
   font-family: 'Raleway', sans-serif;
   font-style: italic;
@@ -67,7 +61,7 @@ a:visited {
 	Header Start
 --*/
 header {
-  background: #590a59;
+  background: #5e408f;
   padding: 20px 0;
 }
 header .navbar {
@@ -91,15 +85,15 @@ header .navbar-default .navbar-nav li a {
   font-weight: 500;
 }
 header .navbar-default .navbar-nav li a:hover {
-  color: #ff256c;
+  color:#ff8500;
 }
 
 .intro-header {
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   padding-bottom: 50px;
   text-align: center;
-  color: #590a59;
-  background:  url(../img/qd-header.gif) no-repeat center center; 
+  color:#5e408f;
+  background:  url(../img/logo_principal.png) no-repeat center center; 
   background-size: 800px;
   background-color: #fff;
 }
@@ -110,7 +104,12 @@ header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 20%;
 }
 
-
+.slogan{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;  
+}
 
 /*--
 	wrapper Start
@@ -118,15 +117,10 @@ header .navbar-default .navbar-nav li a:hover {
 #intro {
   padding: 50px 0;
 }
-#intro .block h2 {
-  padding-top: 35px;
-  line-height: 30px;
-  margin: 0;
-}
 #intro .block p {  
   padding-top: 20px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
 }
 #intro .block img {
   padding-left: 40px;  
@@ -141,11 +135,19 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 .intro-b a {
-  color: #590a59;
+  color: #5e408f;
 }
 
-.intro-a, .intro-c{
-  background-color: #590a59;
+.intro-a {
+  background-color: #5e408f;
+}
+
+.intro-c{
+  background-color: #ff8500;
+}
+
+.intro-a a, .intro-b a, .intro-c a {
+  font-weight: 700;
 }
 
 .intro-a .section-title, .intro-c .section-title {
@@ -157,7 +159,7 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 .intro-b .block p, .intro-b .block h2 {
-  color: #590a59;
+  color: #5e408f;
 }
 
 .intro-a img{
@@ -207,10 +209,10 @@ header .navbar-default .navbar-nav li a:hover {
 
 .myButton {
 	background-color:#ffffff;
-	color:#590a59;
+	color:#5e408f;
 }
 .myButton:hover {    
-    background-color:#ff256c;
+    background-color:#ff8500;
     color: #fff;
     text-decoration: none;
 }
@@ -220,12 +222,12 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 .myButton-header {
-	background-color:#ff256c;
+	background-color:#ff8500;
 	color:#fff;
 }
 
 .myButton-header:hover {    
-    background-color:#590a59;
+    background-color:#5e408f;
     color: #fff;
     text-decoration: none;
 }
@@ -239,7 +241,7 @@ header .navbar-default .navbar-nav li a:hover {
 --*/
 footer {
   padding: 40px 0;
-  background-color: #ff256c;
+  background-color: #5e408f;
 }
 
 .footer-titulo{
