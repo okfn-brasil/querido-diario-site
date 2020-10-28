@@ -22,11 +22,9 @@ h1 {
 }
 h2 {
   font-family: 'Baloo 2', sans-serif;
-  font-size: 35px;
   text-transform: uppercase;
   font-weight: 700;
   padding-top: 35px;
-  line-height: 30px;
   margin: 0;
 }
 h3 {
@@ -48,12 +46,15 @@ a:visited {
   text-decoration: none !important;
   outline: none;
 }
+mark {
+  padding: 0 4px;
+}
 .section-title {
   margin-bottom: 70px;
 }
 
 .section-title p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat Alternative', sans-serif;
   font-style: italic;
   color: #666;
 }
@@ -70,6 +71,10 @@ header .navbar {
 }
 header .navbar-brand {
   padding-top: 5px;
+  margin-bottom: 20px;
+}
+.navbar-brand  img{
+  max-width: 100px;
 }
 header .navbar-default {
   background: none;
@@ -130,20 +135,30 @@ header .navbar-default .navbar-nav li a:hover {
   margin-bottom: 0px;
 }
 
-.intro-a a {
+.intro-a a, .intro-b a {
   color: #fff;
 }
 
-.intro-b a {
-  color: #5e408f;
+.intro-a {
+  background-color:#ff8500;  
 }
 
-.intro-a {
+.intro-a mark {
+  color: #fff;
   background-color: #5e408f;
 }
 
-.intro-c{
+.intro-b mark, .intro-c mark {
+  color: #fff;
   background-color: #ff8500;
+}
+
+.intro-b {
+  background-color: #e55430;
+}
+
+.intro-c{
+  background-color: #966be8;
 }
 
 .intro-a a, .intro-b a, .intro-c a {
@@ -159,7 +174,7 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 .intro-b .block p, .intro-b .block h2 {
-  color: #5e408f;
+  color: #fff;
 }
 
 .intro-a img{
@@ -358,7 +373,6 @@ footer {
   .navbar-brand {
     margin-top: 12px;
   }
-
   .intro-header {
     padding: 25px 0;
     background-size: 380px;
