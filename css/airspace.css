@@ -42,9 +42,11 @@ ul {
 a,
 a:active,
 a:focus, 
-a:visited {
-  text-decoration: none !important;
+a:visited {  
   outline: none;
+}
+a:hover{
+  text-decoration: none !important;
 }
 mark {
   padding: 0 4px;
@@ -86,8 +88,9 @@ header .navbar-default .navbar-nav {
 header .navbar-default .navbar-nav li a {
   color: #fff;
   padding: 10px 26px;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 20px;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
 }
 header .navbar-default .navbar-nav li a:hover {
   color:#ff8f33;
@@ -115,6 +118,7 @@ header .navbar-default .navbar-nav li a:hover {
   font-weight: 500;
   line-height: 60px;  
   margin-top: 40%;
+  text-align:center;
 }
 
 /*--
@@ -136,8 +140,9 @@ header .navbar-default .navbar-nav li a:hover {
   margin-bottom: 0px;
 }
 
-.intro-a a, .intro-b a {
+.intro-a a, .intro-b a, .intro-d a{
   color: #fff;
+  text-decoration: underline;
 }
 
 .intro-a {
@@ -203,7 +208,7 @@ header .navbar-default .navbar-nav li a:hover {
   width: 100%;
 }
 
-.intro-c a:visited{
+.intro-c a:visited, .intro-d a:visited{
   text-decoration-color: none;
 }
 
@@ -225,7 +230,7 @@ header .navbar-default .navbar-nav li a:hover {
 	Subscription Button
 --*/
 
-.myButton, .myButton-header {  
+.myButton-catarse, .myButton-censo, .myButton-header {  
 	border-radius:30px;
 	display:inline-block;
 	cursor:pointer;		
@@ -236,13 +241,14 @@ header .navbar-default .navbar-nav li a:hover {
 	text-decoration:none;
 }
 
-.myButton {
+.myButton-catarse {
 	background-color:#ffffff;
-	color:#5e408f;
+  color:#5e408f !important;
+  text-decoration: none !important;
 }
-.myButton:hover {    
+.myButton-catarse:hover {    
     background-color: #ff8f33;
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
 }
 .myButton-censo {
@@ -327,6 +333,56 @@ footer {
   width: 30px;
   height: 30px;  
 }
+
+/*--
+	---------- APOIO -----------
+--*/
+.apoio-div {
+  margin-top: 50px;
+}
+
+.apoio-titulo {
+  font-family: "Baloo 2", sans-serif; 
+  font-size: 5rem;
+  color: #5e408f;
+}
+
+.apoio-texto {
+  color: #966be8;
+}
+
+.myButton-catarse-apoio {  
+	border-radius:30px;
+	display:inline-block;
+	cursor:pointer;		
+	font-size:16px;
+  font-weight:bold;
+  margin-top: 20px;
+	padding:13px 23px;
+  text-decoration:none;
+  background-color:#ff8f33 ;
+  color:#fff !important;
+  text-decoration: none !important;
+}
+
+.myButton-catarse-apoio:hover {    
+    background-color:#5e408f;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#apoio-lista{
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  column-count: 3;
+}
+
+#apoio-lista p {
+  font-size: 18px;
+}
+
+
 
 /*--
 	---------- RESPONSIVE -----------
