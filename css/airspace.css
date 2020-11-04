@@ -5,8 +5,7 @@
  * The original style.css is now called airspace.css
  * 
  */
-@import url(//fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap);
-/* var text-decoration */
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Montserrat+Alternates:wght@400;600;700&display=swap');
 /*--
 	Common Css
 --*/
@@ -15,29 +14,26 @@ html{
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Raleway', sans-serif;
+h1 {
+  
 }
 h2 {
-  font-size: 30px;
-  font-weight: 400;
+  font-family: 'Baloo 2', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 35px;
+  margin: 0;
 }
 h3 {
   font-size: 28px;
   font-weight: 300;
 }
-p {
+/* p {
   font-size: 15px;
-  line-height: 28px;
-}
+} */
 ul {
   padding: 0;
   margin: 0;
@@ -46,20 +42,21 @@ ul {
 a,
 a:active,
 a:focus, 
-a:visited {
-  text-decoration: none !important;
+a:visited {  
   outline: none;
+}
+a:hover{
+  text-decoration: none !important;
+}
+mark {
+  padding: 1px;
 }
 .section-title {
   margin-bottom: 70px;
 }
-.section-title h2 {
-  text-transform: uppercase;
-  font-size: 28px;
-  font-weight: 600;
-}
+
 .section-title p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat Alternative', sans-serif;
   font-style: italic;
   color: #666;
 }
@@ -67,7 +64,7 @@ a:visited {
 	Header Start
 --*/
 header {
-  background: #590a59;
+  background: #5e408f;
   padding: 20px 0;
 }
 header .navbar {
@@ -76,6 +73,10 @@ header .navbar {
 }
 header .navbar-brand {
   padding-top: 5px;
+  margin-bottom: 20px;
+}
+.navbar-brand  img{
+  max-width: 150px;
 }
 header .navbar-default {
   background: none;
@@ -87,30 +88,33 @@ header .navbar-default .navbar-nav {
 header .navbar-default .navbar-nav li a {
   color: #fff;
   padding: 10px 26px;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 20px;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
 }
 header .navbar-default .navbar-nav li a:hover {
-  color: #ff256c;
+  color:#ff8f33;
 }
 
 .intro-header {
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   padding-bottom: 50px;
   text-align: center;
-  color: #590a59;
-  background:  url(../img/qd-header.gif) no-repeat center center; 
-  background-size: 800px;
+  color:#5e408f;
+  background:  url(../img/logo_slogan.png) no-repeat center center; 
+  background-size: 1000px;
   background-color: #fff;
 }
 
 .intro-message {
   position: relative;
-  padding-top: 15%;
-  padding-bottom: 20%;
+  /* padding-top: 15%;
+  padding-bottom: 20%; */
 }
 
-
+.slogan{ 
+  margin-top: 60%;
+}
 
 /*--
 	wrapper Start
@@ -118,15 +122,10 @@ header .navbar-default .navbar-nav li a:hover {
 #intro {
   padding: 50px 0;
 }
-#intro .block h2 {
-  padding-top: 35px;
-  line-height: 30px;
-  margin: 0;
-}
 #intro .block p {  
   padding-top: 20px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
 }
 #intro .block img {
   padding-left: 40px;  
@@ -136,43 +135,75 @@ header .navbar-default .navbar-nav li a:hover {
   margin-bottom: 0px;
 }
 
-.intro-a a {
+.intro-a a, .intro-b a, .intro-d a{
   color: #fff;
+  text-decoration: underline;
 }
 
-.intro-b a {
-  color: #590a59;
+.intro-a {
+  background-color:#ff8f33;  
 }
 
-.intro-a, .intro-c{
-  background-color: #590a59;
+.intro-a mark {
+  color: #fff;
+  background-color: #5e408f;
+}
+
+.intro-b mark, .intro-d mark  {
+  color: #fff;
+  background-color: #ff8f33;
+}
+
+.intro-c mark {
+  color: #fff;
+  background-color: #5e408f;
+}
+
+.intro-b {
+  background-color: #e55430;
+}
+
+.intro-c{
+  background-color: #fffcbd;
+}
+
+.intro-d{
+  background-color: #966be8;
+}
+
+.intro-a a, .intro-b a, .intro-c a {
+  font-weight: 700;
 }
 
 .intro-a .section-title, .intro-c .section-title {
   color: #fff;
 }
 
-.intro-a .block p, .intro-c .block p {
+.intro-a .block p, .intro-d .block p {
   color: #fff;
 }
 
+.intro-c .block p {
+  color: #5e408f;
+}
+
 .intro-b .block p, .intro-b .block h2 {
-  color: #590a59;
+  color: #fff;
 }
 
 .intro-a img{
-  width: 80%;
+  width: 100%;
 }
 
 .intro-b img {
-  width: 70%;
+  width: 90%;
 }
 
 .intro-c img {
   width: 100%;
 }
 
-.intro-c a:visited{
+.intro-c a:visited, .intro-d a:visited{
   text-decoration-color: none;
 }
 
@@ -194,7 +225,7 @@ header .navbar-default .navbar-nav li a:hover {
 	Subscription Button
 --*/
 
-.myButton, .myButton-header {  
+.myButton-catarse, .myButton-censo, .myButton-header {  
 	border-radius:30px;
 	display:inline-block;
 	cursor:pointer;		
@@ -205,31 +236,41 @@ header .navbar-default .navbar-nav li a:hover {
 	text-decoration:none;
 }
 
-.myButton {
+.myButton-catarse {
 	background-color:#ffffff;
-	color:#590a59;
+  color:#5e408f !important;
+  text-decoration: none !important;
 }
-.myButton:hover {    
-    background-color:#ff256c;
-    color: #fff;
+.myButton-catarse:hover {    
+    background-color: #ff8f33;
+    color: #fff !important;
     text-decoration: none;
 }
+.myButton-censo {
+	background-color:#5e408f;
+	color:#fff;
+}
+.myButton-censo:hover {    
+    background-color:#fff;
+    color: #5e408f;
+}
+
 .myButton:active {
 	position:relative;
 	top:1px;
 }
 
 .myButton-header {
-	background-color:#ff256c;
+	background-color:#ff8f33;
 	color:#fff;
 }
 
 .myButton-header:hover {    
-    background-color:#590a59;
+    background-color:#5e408f;
     color: #fff;
     text-decoration: none;
 }
-.myButton-hader:active {
+.myButton-header:active {
 	position:relative;
 	top:1px;
 }
@@ -239,7 +280,7 @@ header .navbar-default .navbar-nav li a:hover {
 --*/
 footer {
   padding: 40px 0;
-  background-color: #ff256c;
+  background-color: #5e408f;
 }
 
 .footer-titulo{
@@ -289,14 +330,87 @@ footer {
 }
 
 /*--
+	---------- APOIO -----------
+--*/
+.apoio-div {
+  margin-top: 50px;
+}
+
+.apoio-titulo {
+  font-family: "Baloo 2", sans-serif; 
+  font-size: 5rem;
+  color: #5e408f;
+}
+
+.apoio-texto {
+  color: #966be8;
+}
+
+.myButton-catarse-apoio {  
+	border-radius:30px;
+	display:inline-block;
+	cursor:pointer;		
+	font-size:16px;
+  font-weight:bold;
+  margin-top: 20px;
+	padding:13px 23px;
+  text-decoration:none;
+  background-color:#ff8f33 ;
+  color:#fff !important;
+  text-decoration: none !important;
+}
+
+.myButton-catarse-apoio:hover {    
+    background-color:#5e408f;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#apoio-lista{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  column-count: 3;
+}
+
+#apoio-lista p {
+  font-size: 18px;
+  padding: 3px;
+}
+
+
+
+/*--
 	---------- RESPONSIVE -----------
 --*/
+@media (max-width: 1267px){
+  .intro-header {
+    background-size: 800px;
+  }
+  .slogan {
+    margin-top: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 811px) {
+  .navbar-brand  img{
+    max-width: 110px;
+  }
+  header .navbar-brand {
+    padding-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+
 @media (min-width: 577px) and (max-width: 991px) {
   .container {
     width: 90%;    
   }
   .intro-header {
     background-size: 610px;
+  }
+  #intro .block img {
+    padding-left: 0;
   }
 
   #intro .block p {
@@ -315,7 +429,15 @@ footer {
     width: 60%;
   }
 
-  .myButton, .myButton-header {
+  .intro-d .intro-text {
+    margin-top: 20px;
+  }
+
+  iframe {
+    height: 426px;
+  }
+
+  .myButton, .myButton-header, .myButton-catarse, .myButton-censo{
     font-size: 14px;
     margin-top: 10px;
     padding: 10px 20px;
@@ -342,6 +464,23 @@ footer {
 @media (max-width: 767px) {
   .intro-c .intro-text {
     width: 100%;
+  }  
+}
+
+@media (max-width: 767px) {
+  #intro {
+    padding-top: 20px;
+  }
+  .intro-center{
+    display: inline;
+    text-align: center;
+  }
+  .intro-a img, .intro-b img, .intro-c img {
+    width: 60%;
+    padding-top: 15px;
+  }
+  #intro .block p {
+    font-size: 16px;
   }
 }
 
@@ -349,22 +488,32 @@ footer {
   .container{
     text-align: center;         
   }
-
+  .apoio-container{
+    text-align: left;
+  }
+  .apoio-titulo{
+    font-size: 4rem;
+  }
+  .apoio-texto{
+    font-size: 20px;
+  }
+  #apoio-lista{
+    column-count: 1;
+    text-align: center;
+  }
   header {
     padding: 0;
   }
   .navbar-brand {
     margin-top: 12px;
   }
-
   .intro-header {
     padding: 25px 0;
     background-size: 380px;
   }
 
-  .myButton, .myButton-header {
+  .myButton, .myButton-header, .myButton-catarse, .myButton-censo{
     font-size: 12px;
-    margin-top: 20px;
     padding: 4px 10px;
   }
 
@@ -407,6 +556,10 @@ footer {
   .intro-b img {
     width: 60%;
     padding-top: 10px;
+  }
+
+  iframe {
+    height: 426px;
   }
 
   footer {
