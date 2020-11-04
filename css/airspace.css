@@ -76,7 +76,7 @@ header .navbar-brand {
   margin-bottom: 20px;
 }
 .navbar-brand  img{
-  max-width: 100px;
+  max-width: 150px;
 }
 header .navbar-default {
   background: none;
@@ -101,8 +101,8 @@ header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 50px;
   text-align: center;
   color:#5e408f;
-  background:  url(../img/logo_principal.png) no-repeat center center; 
-  background-size: 600px;
+  background:  url(../img/logo_slogan.png) no-repeat center center; 
+  background-size: 1000px;
   background-color: #fff;
 }
 
@@ -112,13 +112,8 @@ header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 20%; */
 }
 
-.slogan{
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 50px;
-  font-weight: 500;
-  line-height: 60px;  
-  margin-top: 40%;
-  text-align:center;
+.slogan{ 
+  margin-top: 60%;
 }
 
 /*--
