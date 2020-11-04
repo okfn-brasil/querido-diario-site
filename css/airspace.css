@@ -464,6 +464,23 @@ footer {
 @media (max-width: 767px) {
   .intro-c .intro-text {
     width: 100%;
+  }  
+}
+
+@media (max-width: 767px) {
+  #intro {
+    padding-top: 20px;
+  }
+  .intro-center{
+    display: inline;
+    text-align: center;
+  }
+  .intro-a img, .intro-b img, .intro-c img {
+    width: 60%;
+    padding-top: 15px;
+  }
+  #intro .block p {
+    font-size: 16px;
   }
 }
 
