@@ -270,7 +270,7 @@ header .navbar-default .navbar-nav li a:hover {
     color: #fff;
     text-decoration: none;
 }
-.myButton-hader:active {
+.myButton-header:active {
 	position:relative;
 	top:1px;
 }
@@ -367,7 +367,6 @@ footer {
 }
 
 #apoio-lista{
-
   padding-top: 30px;
   padding-bottom: 30px;
   column-count: 3;
@@ -375,6 +374,7 @@ footer {
 
 #apoio-lista p {
   font-size: 18px;
+  padding: 3px;
 }
 
 
@@ -437,7 +437,7 @@ footer {
     height: 426px;
   }
 
-  .myButton, .myButton-header {
+  .myButton, .myButton-header, .myButton-catarse, .myButton-censo{
     font-size: 14px;
     margin-top: 10px;
     padding: 10px 20px;
@@ -488,7 +488,19 @@ footer {
   .container{
     text-align: center;         
   }
-
+  .apoio-container{
+    text-align: left;
+  }
+  .apoio-titulo{
+    font-size: 4rem;
+  }
+  .apoio-texto{
+    font-size: 20px;
+  }
+  #apoio-lista{
+    column-count: 1;
+    text-align: center;
+  }
   header {
     padding: 0;
   }
@@ -500,9 +512,8 @@ footer {
     background-size: 380px;
   }
 
-  .myButton, .myButton-header {
+  .myButton, .myButton-header, .myButton-catarse, .myButton-censo{
     font-size: 12px;
-    margin-top: 20px;
     padding: 4px 10px;
   }
 
@@ -545,6 +556,10 @@ footer {
   .intro-b img {
     width: 60%;
     padding-top: 10px;
+  }
+
+  iframe {
+    height: 426px;
   }
 
   footer {
