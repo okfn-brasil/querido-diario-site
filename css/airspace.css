@@ -5,7 +5,7 @@
  * The original style.css is now called airspace.css
  * 
  */
- @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Montserrat+Alternates:wght@400;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Montserrat+Alternates:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 /*--
 	Common Css
 --*/
@@ -377,6 +377,76 @@ footer {
   padding: 3px;
 }
 
+/*--
+	---------- BLOG -----------
+--*/
+.blog-div {
+  margin-top: 50px;
+}
+
+.blog-titulo {
+  font-family: "Baloo 2", sans-serif; 
+  font-size: 5rem;
+  color: #5e408f;
+}
+
+.blog-texto {
+  color: #966be8;
+  padding-bottom: 10px;
+}
+
+.linha {
+  border: 2px solid #ff8f33;
+  border-radius: 5px;
+}
+
+.pontilhado {
+  border-top: 5px dotted #ff8f33;
+}
+
+
+.center-text {
+  text-align: center;
+}
+
+.post-area {
+ padding: 40px 0;
+ width: 100%;
+ min-height: 150px;
+ background-color: white;
+ border-bottom: 1px dotted #ccc;
+ text-align: left;
+}
+
+.post-area a:link, .post-area a:visited {
+ font-size: 30px;
+ color: #333;
+}
+
+.post-area a:hover {
+ color: #0D0017;
+}
+
+.myButton-voltar {  
+	border-radius:30px;
+	display:inline-block;
+	cursor:pointer;		
+	font-size:16px;
+  font-weight:bold;
+  margin-top: 20px;
+	padding:13px 23px;
+  text-decoration:none;
+  background-color:#ff8f33 ;
+  color:#fff !important;
+  text-decoration: none !important;
+}
+
+.myButton-voltar:hover {    
+    background-color:#5e408f;
+    color: #fff !important;
+    text-decoration: none;
+}
+
 
 
 /*--
@@ -488,13 +558,23 @@ footer {
   .container{
     text-align: center;         
   }
-  .apoio-container{
+  .apoio-container, .blog-container{
     text-align: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
-  .apoio-titulo{
+  .apoio-titulo, .blog-titulo{
     font-size: 4rem;
   }
-  .apoio-texto{
+  .apoio-texto, .blog-texto{
+    font-size: 20px;
+  }
+  .post-area {
+    padding: 20px 0;
+  }
+  .post-area a:link, .post-area a:visited{
     font-size: 20px;
   }
   #apoio-lista{
@@ -512,7 +592,7 @@ footer {
     background-size: 380px;
   }
 
-  .myButton, .myButton-header, .myButton-catarse, .myButton-censo{
+  .myButton, .myButton-header, .myButton-catarse, .myButton-censo, .myButton-voltar{
     font-size: 12px;
     padding: 4px 10px;
   }
