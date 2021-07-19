@@ -1,3 +1,9 @@
+*Este projeto foi arquivado para ser substituído pelo [frontend da Plataforma de Busca do Querido Diário](https://github.com/okfn-brasil/querido-diario-frontend).*
+
+*This project has been archived in favor of the [Querido Diário Search Platform frontend](https://github.com/okfn-brasil/querido-diario-frontend).*
+
+---
+
 # _Airspace_ for Jekyll
 ![screenshot](screenshots/home.png "Description goes here")
 
