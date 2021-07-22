@@ -366,8 +366,16 @@ footer {
     text-decoration: none;
 }
 
-#apoio-lista{
+.apoio-quem {
   padding-top: 30px;
+  font-family: "Baloo 2", sans-serif; 
+  font-weight: 700;
+  font-size: 3rem;
+  color: #ff8f33;
+}
+
+#apoio-lista{  
+  padding-top: 5px;
   padding-bottom: 30px;
   column-count: 3;
 }
@@ -570,6 +578,9 @@ footer {
   }
   .apoio-texto, .blog-texto{
     font-size: 20px;
+  }
+  .apoio-quem {
+    text-align: center;
   }
   .post-area {
     padding: 20px 0;
